@@ -7,12 +7,12 @@ const filterSchema = new mongoose.Schema(
       required: true
     },
     filter: {
-      type: String,
+      type: mongoose.Schema.Types.Mixed,
       required: true
     }
   },
   {
-      timestamps: true
+    timestamps: true
   }
 );
 

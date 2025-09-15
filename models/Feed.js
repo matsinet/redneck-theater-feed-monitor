@@ -9,10 +9,14 @@ const feedSchema = new mongoose.Schema(
     url: {
       type: String,
       required: true
+    },
+    active: {
+      type: Boolean,
+      default: true
     }
   },
   {
-      timestamps: true
+    timestamps: true
   }
 );
 

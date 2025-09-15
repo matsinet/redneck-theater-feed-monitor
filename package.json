@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "parcel build src/index.html --dist-dir public",
-    "start": "nodemon --watch ./ -e js ./app.js",
+    "start": "npm run build && nodemon --watch ./ -e js ./app.js",
     "serve": "parcel src/index.html --dist-dir public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

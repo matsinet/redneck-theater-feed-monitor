@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import cors from "cors";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
