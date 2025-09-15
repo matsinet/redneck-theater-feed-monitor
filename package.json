@@ -1,0 +1,27 @@
+{
+  "name": "feed-monitor",
+  "version": "0.0.1",
+  "description": "Monitor the RSS feed and match defined filters",
+  "type": "module",
+  "scripts": {
+    "build": "parcel build src/index.html --dist-dir public",
+    "start": "npm run build && nodemon --watch ./ -e js ./app.js",
+    "serve": "parcel src/index.html --dist-dir public",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "matsinet@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "feed-read": "^0.0.1",
+    "html-literal": "^1.1.0",
+    "mongoose": "^8.18.1",
+    "navigo": "^8.11.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "parcel": "^2.15.4"
+  }
+}
